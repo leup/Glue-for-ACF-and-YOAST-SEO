@@ -21,6 +21,7 @@ function yoast_acf_glue()
 
         add_filter('wpseo_pre_analysis_post_content', 'yoast_acf_add_content_to_yoast', 10, 2);
 
+        wp_enqueue_script( 'wp-seo-metabox-acf', plugins_url( 'assets/wp-seo-metabox-extra' . WPSEO_CSSJS_SUFFIX . '.js', __FILE__ ), array('wp-seo-metabox'), WPSEO_VERSION, true );
     }
 
 }
