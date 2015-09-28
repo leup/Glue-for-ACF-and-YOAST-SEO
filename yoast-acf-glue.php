@@ -16,6 +16,7 @@ function yoast_acf_glue()
     if (is_admin()) {
 
         include __DIR__ . '/fields/text.php';
+        include __DIR__ . '/fields/textarea.php';
 
         do_action('yoast-acf-glue/include');
 
